@@ -1,12 +1,16 @@
-package work3;
-
-import java.util.Scanner;
+package src;
 
 public class Task13 {
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter name -");
-        String name = scanner.nextLine();
-        System.out.println("My name is" + name);
+        double w = 100.0;
+
+        double newW = w * 453.6;
+        int kg = (int) (newW / 1000);
+
+        System.out.println("Kg ->" + kg );
+
+        int gr = (int) (newW % 1000);
+        System.out.println("Gr ->" + gr);
     }
 }
